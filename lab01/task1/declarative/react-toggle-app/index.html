@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>jQuery Toggle Example</title>
+    <style>
+      .highlight {
+        background-color: yellow;
+        font-weight: bold;
+      }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  </head>
+<body>
+
+    <button id="toggleBtn">Toggle Highlight</button>
+    <p id="textPara">Это текст для подсветки</p>
+
+    <script>
+        $(document).ready(function() {
+          $("#toggleBtn").click(function() {
+            $("#textPara").toggleClass("highlight");
+      });
+    });
+  </script>
+
+</body>
+</html>
